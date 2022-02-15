@@ -1,0 +1,65 @@
+.profile {
+    background-color: #fff;
+    width: 390px;
+    height: 138.38px;
+    position: relative;
+    &_img {
+        position: absolute;
+        top: 13px;
+        left: 25px;
+    }
+    &_name {
+        font-weight: 600 !important;
+        font-size: 12px !important;
+        position: absolute;
+        top: 1px;
+        left: 58px;
+    }
+    &_subname {
+        font-size: 10px !important;
+        position: absolute;
+        top: 11px;
+        left: 58px;
+    }
+    &_chevron {
+        position: absolute;
+        top: 11px;
+        right: 18px;
+    }
+    &_form1 {
+        position: absolute;
+        top: 45px;
+        left: 25px;
+        width: 338px;
+        height: 25px;
+        text-align: center;
+    }
+    &_form2 {
+        position: absolute;
+        width: 125px;
+        height: 25px;
+        left: 25px;
+        top: 74.66px;
+    }
+    &_form3 {
+        position: absolute;
+        width: 159px;
+        height: 25px;
+        left: 159px;
+        top: 75.04px;
+    }
+    &_form4 {
+        position: absolute;
+        width: 201px;
+        height: 25px;
+        left: 25px;
+        top: 104.04px;
+    }
+    &_3 {
+        position: absolute;
+        width: 23.91px;
+        height: 23.18px;
+        left: 357px;
+        top: 103.03px;
+    }
+}

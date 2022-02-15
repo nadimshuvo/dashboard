@@ -1,0 +1,58 @@
+.search-box {
+    @mixin atLarge {
+        position: relative;
+        width: 472px;
+        height: 35px;
+        border-radius: 17.07px;
+        text-align: left;
+    }
+    &_text {
+        @mixin atLarge {
+            background: none;
+            display: block;
+            color: #464F55;
+            width: 472px;
+            height: 35px;
+            outline: none;
+            border: 2px solid #C0CCCC;
+            border-radius: 17.07px;
+            transition: 1s;
+            text-align: left;
+            padding-left: 20px;
+            font-size: 14px !important;
+            line-height: 24px !important;
+        }
+        &:focus {
+            @mixin atLarge {
+                width: 472px;
+                border-color: #4D77FF;
+                ;
+            }
+        }
+    }
+    &_cross {
+        @mixin atLarge {
+            position: absolute;
+            top: 9px;
+            right: 45px;
+            width: 16px;
+            height: 16px;
+        }
+    }
+    &_line {
+        @mixin atLarge {
+            position: absolute;
+            top: 4.63px;
+            right: 40px;
+        }
+    }
+    &_search {
+        @mixin atLarge {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 9px;
+            right: 15px;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.logo {
+    &_1 {
+        @mixin atLarge {
+            width: 32px;
+            height: 32px;
+        }
+    }
+    &_2 {
+        @mixin atLarge {
+            width: 68px;
+            height: 28px;
+        }
+    }
+}

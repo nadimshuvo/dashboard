@@ -1,0 +1,21 @@
+.font {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 20px;
+    color: #1D1929;
+    &-sf {
+        font-family: 'SF Pro Display', 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #1D1929;
+    }
+    &-borders {
+        border: 1.5px solid #C0CCCC;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+}

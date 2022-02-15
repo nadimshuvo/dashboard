@@ -1,0 +1,33 @@
+    .header {
+        @mixin atLarge {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &_p {
+            font-size: 14px !important;
+            line-height: 32px !important;
+            color: #253858;
+        }
+        /* Sign-In-Options */
+        &-sign-in-option {
+            @mixin atLarge {
+                position: relative;
+            }
+            &_logo {
+                position: absolute;
+                top: 19px;
+                left: 12px;
+                width: 16.64px;
+                height: 20px;
+            }
+            &_text {
+                @mixin atLarge {
+                    padding-top: 25px;
+                    font-size: 12px !important;
+                    line-height: 15px !important;
+                    font-weight: 500;
+                }
+            }
+        }
+    }

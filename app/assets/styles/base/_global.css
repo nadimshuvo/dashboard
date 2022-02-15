@@ -1,0 +1,45 @@
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #12122E;
+    background-color: rgb(255, 255, 255);
+}
+
+main {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family: Mont;
+    font-style: normal;
+}
+
+header {
+    height: 64px;
+    width: auto;
+}
+
+main {
+    background: #F4F9FF;
+}
