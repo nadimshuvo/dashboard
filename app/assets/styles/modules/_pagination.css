@@ -1,0 +1,26 @@
+.pagination {
+    max-width: 490px;
+    margin: auto;
+    display: flex;
+    margin-top: 38.62px;
+    &_left-arrow {
+        padding-top: 7px;
+    }
+    &_one {
+        width: 30px;
+        height: 32px;
+        padding-top: 7px;
+    }
+    &>ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        &>li {
+            list-style: none;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            line-height: 20px;
+            padding: 12px;
+        }
+    }
+}

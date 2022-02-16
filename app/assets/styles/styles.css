@@ -8,4 +8,6 @@
 @import 'modules/_search-box.css';
 @import 'modules/_filter.css';
 @import 'modules/_design.css';
-@import 'modules/_profile.css'
+@import 'modules/_profile.css';
+@import 'modules/_pagination.css';
+@import 'modules/_footer.css'
