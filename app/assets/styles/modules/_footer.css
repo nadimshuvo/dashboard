@@ -3,5 +3,20 @@ footer {
 }
 
 .footer {
-    display: flex;
+    position: relative;
+    &_copy-text {
+        font-weight: 500 !important;
+    }
+    &--inside-links {
+        justify-content: space-around !important;
+        &>h5 {
+            font-weight: 500;
+        }
+    }
+    &_img {
+        position: absolute;
+        left: 213px;
+        top: 24px;
+    }
+    &--links_first {}
 }

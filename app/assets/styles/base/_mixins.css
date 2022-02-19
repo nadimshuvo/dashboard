@@ -15,3 +15,35 @@
         @mixin-content;
     }
 }
+
+@define-mixin form {
+    text-align: center;
+    display: block;
+    color: #464F55;
+    outline: none;
+    border: 2px solid #C0CCCC;
+    transition: 1s;
+    text-align: left;
+}
+
+@define-mixin focus {
+    border: 1px solid #4D77FF;
+}
+
+
+/* display-flex */
+
+@define-mixin d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--b {
+        flex-basis: 722px;
+    }
+}

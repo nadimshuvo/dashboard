@@ -18,7 +18,7 @@
     &_subname {
         font-size: 10px !important;
         position: absolute;
-        top: 11px;
+        top: 13px;
         left: 58px;
     }
     &_chevron {
@@ -32,7 +32,10 @@
         left: 25px;
         width: 338px;
         height: 25px;
-        text-align: center;
+        @mixin form;
+        &:focus {
+            @mixin focus;
+        }
     }
     &_form2 {
         position: absolute;
@@ -40,6 +43,10 @@
         height: 25px;
         left: 25px;
         top: 74.66px;
+        @mixin form;
+        &:focus {
+            @mixin focus;
+        }
     }
     &_form3 {
         position: absolute;
@@ -47,6 +54,10 @@
         height: 25px;
         left: 159px;
         top: 75.04px;
+        @mixin form;
+        &:focus {
+            @mixin focus;
+        }
     }
     &_form4 {
         position: absolute;
@@ -54,6 +65,10 @@
         height: 25px;
         left: 25px;
         top: 104.04px;
+        @mixin form;
+        &:focus {
+            @mixin focus;
+        }
     }
     &_3 {
         position: absolute;

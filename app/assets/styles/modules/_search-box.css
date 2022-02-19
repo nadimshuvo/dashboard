@@ -26,7 +26,6 @@
             @mixin atLarge {
                 width: 472px;
                 border-color: #4D77FF;
-                ;
             }
         }
     }
