@@ -11,7 +11,7 @@
 }
 
 @define-mixin atLarge {
-    @media(min-width: 1250px) {
+    @media(min-width: 1200px) {
         @mixin-content;
     }
 }
@@ -44,6 +44,15 @@
     justify-content: space-between;
     align-items: center;
     &--b {
-        flex-basis: 722px;
+        flex-basis: 320px;
+        @mixin atLarge {
+            flex-basis: 722px;
+        }
+    }
+    &--colm {
+        flex-direction: column;
+        @mixin atLarge {
+            flex-direction: row;
+        }
     }
 }

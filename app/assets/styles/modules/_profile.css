@@ -1,8 +1,11 @@
 .profile {
     background-color: #fff;
-    width: 390px;
+    width: 320px;
     height: 138.38px;
     position: relative;
+    @mixin atLarge {
+        width: 390px;
+    }
     &_img {
         position: absolute;
         top: 13px;
@@ -30,9 +33,12 @@
         position: absolute;
         top: 45px;
         left: 25px;
-        width: 338px;
+        width: 278px;
         height: 25px;
         @mixin form;
+        @mixin atLarge {
+            width: 338px;
+        }
         &:focus {
             @mixin focus;
         }
@@ -50,11 +56,14 @@
     }
     &_form3 {
         position: absolute;
-        width: 159px;
+        width: 144px;
         height: 25px;
         left: 159px;
         top: 75.04px;
         @mixin form;
+        @mixin atLarge {
+            width: 159px;
+        }
         &:focus {
             @mixin focus;
         }
@@ -74,7 +83,11 @@
         position: absolute;
         width: 23.91px;
         height: 23.18px;
-        left: 357px;
-        top: 103.03px;
+        left: 285px;
+        top: 105px;
+        @mixin atLarge {
+            top: 103.03px;
+            left: 357px;
+        }
     }
 }

@@ -4,19 +4,38 @@ footer {
 
 .footer {
     position: relative;
+    &_copy {
+        order: 1;
+        @mixin atLarge {
+            order: 0;
+        }
+    }
     &_copy-text {
+        font-size: 9px !important;
         font-weight: 500 !important;
     }
     &--inside-links {
-        justify-content: space-around !important;
+        flex-direction: column;
+        @mixin atLarge {
+            flex-direction: row;
+            justify-content: space-around !important;
+        }
         &>h5 {
-            font-weight: 500;
+            line-height: 10px;
+            @mixin atLarge {
+                line-height: 20px;
+                font-weight: 500;
+            }
         }
     }
     &_img {
         position: absolute;
-        left: 213px;
-        top: 24px;
+        left: 75px;
+        top: 19px;
+        @mixin atLarge {
+            left: 213px;
+            top: 24px;
+        }
     }
     &--links_first {}
 }

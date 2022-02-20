@@ -1,10 +1,15 @@
 .wrapper {
+    max-width: 320px;
+    margin: 0 auto;
     @mixin atLarge {
         max-width: 1223px;
         margin: 0 auto;
     }
     &--footer {
-        max-width: 1200px;
+        max-width: 320px;
         margin: 0 auto;
+        @mixin atLarge {
+            max-width: 1200px;
+        }
     }
 }

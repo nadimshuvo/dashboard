@@ -1,18 +1,31 @@
     .header {
+        padding-top: 16px;
         @mixin atLarge {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            padding-top: 0
         }
+        @mixin d-flex;
         &_p {
-            font-size: 14px !important;
-            line-height: 32px !important;
-            color: #253858;
+            opacity: 0;
+            position: absolute;
+            z-index: -1;
+            @mixin atLarge {
+                opacity: 1;
+                position: relative;
+                z-index: 1;
+                font-size: 14px !important;
+                line-height: 32px !important;
+                color: #253858;
+            }
         }
         /* Sign-In-Options */
         &-sign-in-option {
+            opacity: 0;
+            position: absolute;
+            z-index: -1;
             @mixin atLarge {
+                opacity: 1;
                 position: relative;
+                z-index: 1;
             }
             &_logo {
                 position: absolute;
@@ -28,6 +41,14 @@
                     line-height: 15px !important;
                     font-weight: 500;
                 }
+            }
+        }
+        /* menu icon */
+        &_menu-icon {
+            @mixin atLarge {
+                opacity: 0;
+                position: absolute;
+                z-index: -1;
             }
         }
     }

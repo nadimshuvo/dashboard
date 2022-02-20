@@ -10,20 +10,23 @@
         align-items: center;
         color: #464F55 !important;
         font-weight: 500 !important;
-        font-size: 16px !important;
+        @mixin atLarge {
+            font-size: 16px !important;
+        }
     }
     /* right-side filter */
     &_aside {
-        display: flex;
-        align-items: center;
+        @mixin d-flex;
         &_img {
             padding-right: 10px;
             padding-top: 5px;
         }
         &_text {
-            padding-right: 10px;
             font-size: 12.5px !important;
             font-weight: 600;
+            @mixin atLarge {
+                padding-right: 10px;
+            }
         }
     }
 }

@@ -1,10 +1,15 @@
 .logo {
-    animation-name: example;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    width: 81px;
+    height: auto;
+    @mixin d-flex;
+    @mixin atLarge {
+        animation-name: example;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
     @keyframes example {
         0% {
             transform: scale(0);
@@ -21,12 +26,16 @@
         }
     }
     &_1 {
+        width: 24px;
+        height: auto;
         @mixin atLarge {
             width: 32px;
             height: 32px;
         }
     }
     &_2 {
+        width: 52px;
+        padding-left: 1px;
         @mixin atLarge {
             width: 68px;
             height: 28px;
