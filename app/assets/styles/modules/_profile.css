@@ -3,6 +3,7 @@
     width: 320px;
     height: 138.38px;
     position: relative;
+    margin: auto;
     @mixin atLarge {
         width: 390px;
     }

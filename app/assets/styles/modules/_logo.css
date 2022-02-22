@@ -3,12 +3,12 @@
     height: auto;
     @mixin d-flex;
     @mixin atLarge {
-        animation-name: example;
+        /*animation-name: example;
         animation-duration: 5s;
         animation-timing-function: linear;
         animation-delay: 0s;
         animation-iteration-count: infinite;
-        animation-direction: alternate;
+        animation-direction: alternate;*/
     }
     @keyframes example {
         0% {

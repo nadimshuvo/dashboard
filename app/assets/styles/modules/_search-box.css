@@ -4,6 +4,9 @@
     height: 32px;
     border-radius: 17.07px;
     text-align: left;
+    @mixin atMedium {
+        width: 425px;
+    }
     @mixin atLarge {
         width: 472px;
         height: 35px;
@@ -20,6 +23,9 @@
         transition: 1s;
         text-align: left;
         padding-left: 7px;
+        @mixin atMedium {
+            width: 425px;
+        }
         @mixin atLarge {
             width: 472px;
             height: 35px;
