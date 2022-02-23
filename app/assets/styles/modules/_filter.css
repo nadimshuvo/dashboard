@@ -1,9 +1,35 @@
 .filter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @mixin d-flex;
     height: 70px;
     width: auto;
+    /* Filter JS Menu Start */
+    &_content {
+        &_inner {
+            @mixin atLarge {}
+        }
+        &_container {
+            /* filter pop-up header */
+            &--header {
+                &>h2 {}
+            }
+            &--line {}
+            &--body {}
+            /* filter pop-up body */
+        }
+    }
+    /* Filter JS Menu End */
+    &_text {
+        display: flex;
+        gap: 5px;
+    }
+    /* ! -marks on Mobile Filter */
+    &_i {
+        align-self: center;
+        @mixin atLarge {
+            display: none;
+        }
+    }
+    /* ! -marks on Mobile Filter End */
     &_p1 {
         font-weight: 500 !important;
         display: flex;
@@ -29,4 +55,10 @@
             }
         }
     }
+}
+
+button {
+    position: relative;
+    border: none;
+    background-color: transparent;
 }
