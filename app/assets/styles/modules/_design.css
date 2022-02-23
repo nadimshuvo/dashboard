@@ -5,6 +5,7 @@
     @mixin atLarge {
         grid-template-columns: repeat(auto-fit, minmax(318px, 1fr));
         grid-column-gap: 10px;
-        grid-row-gap: 10px;
+        grid-row-gap: 45px;
+        /* 10px from design */
     }
 }

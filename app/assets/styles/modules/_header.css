@@ -45,10 +45,9 @@
         }
         /* menu icon */
         &_menu-icon {
+            cursor: pointer;
             @mixin atLarge {
-                opacity: 0;
-                position: absolute;
-                z-index: -1;
+                display: none;
             }
         }
     }

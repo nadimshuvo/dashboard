@@ -16,6 +16,7 @@ body {
 
 main {
     display: block;
+    min-height: calc(100vh - 131px);
 }
 
 img {
@@ -42,4 +43,8 @@ header {
 
 main {
     background: #F4F9FF;
+}
+
+li {
+    list-style: none;
 }

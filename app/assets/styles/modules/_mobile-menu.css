@@ -1,0 +1,98 @@
+.mobile-menu {
+    opacity: 0;
+    position: absolute;
+    display: none;
+    z-index: -1;
+    /* At 1200px, mobile-menu will be hidden */
+    @mixin atLarge {
+        display: none;
+        position: absolute;
+    }
+    /* when menu-icon is being clicked */
+    &--is-visible {
+        display: block;
+        opacity: 1;
+        position: absolute;
+        z-index: 1;
+    }
+    &_inner {
+        position: absolute;
+        margin-top: -48px;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+        left: 0px;
+        top: 0px;
+        background: rgba(9, 30, 66, 0.54);
+        @mixin atLarge {
+            display: none;
+        }
+    }
+    &_background {}
+    &_container {
+        position: absolute;
+        z-index: 2;
+        width: 310px;
+        height: 520px;
+        left: 0px;
+        top: 0px;
+        background: #FFFFFF;
+        box-shadow: 0px 3.41818px 3.41818px rgba(0, 0, 0, 0.25);
+        border-radius: 4.27273px;
+    }
+    &_header {
+        width: 310.2px;
+        height: 80.33px;
+        background: rgba(173, 202, 202, 0.25);
+        /* home */
+        &__home {
+            position: absolute;
+            cursor: pointer;
+            z-index: 1;
+            left: 34.18px;
+            top: 28px;
+        }
+        /* sign-in */
+        &__sign-in {
+            position: absolute;
+            cursor: pointer;
+            z-index: 1;
+            left: 194px;
+            top: 28px;
+        }
+        /* cross */
+        &__cross {
+            position: absolute;
+            cursor: pointer;
+            z-index: 10;
+            top: 14px;
+            right: 17px;
+        }
+    }
+    /* mobile-menu_body */
+    &_body {
+        /* mobile-menu_ul items */
+        &>ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            /* mobile-menu_li items */
+            &>li {
+                cursor: pointer;
+                font-size: 16px !important;
+                line-height: 21px !important;
+                margin-top: 20px;
+                transition: all .31s ease-out;
+                /* li items hover effects */
+                &:hover {
+                    padding: 9px;
+                    background: linear-gradient(0deg, #F9F9FF, #F9F9FF);
+                    border-radius: 10px;
+                }
+                &>a {
+                    color: #1D1929;
+                }
+            }
+        }
+    }
+}

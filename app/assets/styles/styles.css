@@ -6,7 +6,7 @@
 @import 'modules/_header.css';
 @import 'modules/_logo.css';
 @import 'modules/_search-box.css';
-@import "modules/_modal.css";
+@import 'modules/_mobile-menu.css';
 @import 'modules/_filter.css';
 @import 'modules/_design.css';
 @import 'modules/_profile.css';

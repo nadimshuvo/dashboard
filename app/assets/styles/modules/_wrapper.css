@@ -14,4 +14,9 @@
             max-width: 1160px;
         }
     }
+    /* Wrapper for mobile Ul list items */
+    &--ul {
+        max-width: 245px;
+        margin: 0 auto;
+    }
 }
